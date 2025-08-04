@@ -32,9 +32,7 @@ This often forces users to create full WIQL queries outside the backlog view, di
         * `"User Authentication Flow"` (finds items with this exact phrase across default fields)
         * `DAT - task` (finds items containing these words across default fields)
     * **Wildcards:** Use `*` or `?` for partial matches. Can be applied to default fields (e.g., `bug* fix`) or explicit fields (e.g., `title:BugFix*`, `description:*user`, `name:J?hn`).
-    * **Exact Phrases (Explicit Field):** `status:"Blocked for Review"` (use for non-default fields or when disambiguation is needed).
     * **Exclusions:** `-tag:Blocked`, `-assignedTo:unassigned`
-    * **Value Lists:** `state:(Active, New, Resolved)`
     * **Ranges & Comparisons:** `storyPoints:5..10`, `createdDate:>"2025-01-01"`
     * **"Is Empty" / "Is Not Empty":** `description:empty`, `assignedTo:notempty`
     * **Relative Dates:** `created:"last month"`, `updated:today`
